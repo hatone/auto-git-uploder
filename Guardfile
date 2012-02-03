@@ -10,5 +10,5 @@
 ignore_paths '.git'
 
 guard 'shell' do
-  watch(/(.*)/) {|m| `git add -u;git add -A;git commit -m "auto upload";git push` } 
+  watch(/(.*)/) {|m| `git add -u;git add -A;git commit -m "auto upload";git push;git gc` } 
 end
