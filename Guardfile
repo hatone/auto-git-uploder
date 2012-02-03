@@ -6,5 +6,5 @@
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard 'shell' do
-  watch(/(.*)/) {|m| `git add .` } 
+  watch(/(.*)/) {|m| `git add .;git commit -m "auto upload";git push` } 
 end
